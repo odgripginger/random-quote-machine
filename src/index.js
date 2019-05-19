@@ -29,6 +29,9 @@ class App extends React.Component {
           dropColor={() => this.randomColor()}
           color={this.state.color}
         />
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+          Not found
+        </script>
       </div>
     );
   }
