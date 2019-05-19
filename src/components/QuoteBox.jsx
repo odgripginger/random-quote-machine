@@ -33,32 +33,36 @@ export default class QuoteBox extends React.Component {
           <br />
           <p id="author">{"- " + author}</p>
         </b>
-        <button id="tweet-quote">
-          <a
-            href={
-              "https://twitter.com/intent/tweet?hashtags=quotes,rickandmorty&related=freecodecamp&text=" +
-              quote.replace(/\s/g, "%20") +
-              "%20%0D-" +
-              author.replace(/\s/g, "%20")
-            }
-          >
+
+        <a
+          id="tweet-quote"
+          href={
+            "https://twitter.com/intent/tweet?hashtags=quotes,rickandmorty&related=freecodecamp&text=" +
+            quote.replace(/\s/g, "%20") +
+            "%20%0D-" +
+            author.replace(/\s/g, "%20")
+          }
+        >
+          <button>
             <i class="fab fa-twitter" />
-          </a>
-        </button>
-        <button>
-          <a
-            href={
-              "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" +
-              author.replace(/\s/g, "%20") +
-              "&content=" +
-              quote.replace(/\s/g, "%20") +
-              "%0D" +
-              "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"
-            }
-          >
-            <i className="fab fa-tumblr" />{" "}
-          </a>
-        </button>
+          </button>
+        </a>
+
+        <a
+          href={
+            "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" +
+            author.replace(/\s/g, "%20") +
+            "&content=" +
+            quote.replace(/\s/g, "%20") +
+            "%0D" +
+            "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"
+          }
+        >
+          <button>
+            <i className="fab fa-tumblr" />
+          </button>
+        </a>
+
         <button
           id="new-quote"
           onClick={() => {
