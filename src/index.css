@@ -18,11 +18,7 @@ a:visited {
   background-color: red;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg");
   background-size: 20%;
-  background-blend-mode: soft-light;
-
-  transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
+  background-blend-mode: saturation;
 }
 
 #quote-box {
@@ -37,7 +33,7 @@ a:visited {
 
   padding: 3vh 2vw;
 
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin-right: 0.4em;
   font-family: Handlee, Roboto;
 
